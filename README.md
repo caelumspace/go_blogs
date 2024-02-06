@@ -1,4 +1,4 @@
-# capture-life-api
+# go_blogs-api
 This is a basic blog api designed using golang.
 
 # Getting started
