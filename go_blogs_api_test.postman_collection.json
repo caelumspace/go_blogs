@@ -1,0 +1,1088 @@
+{
+	"info": {
+		"_postman_id": "659b113a-75f5-4fbe-b0be-ccf72edf1385",
+		"name": "go_blogs_api_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "blog",
+					"item": [
+						{
+							"name": "Sample endpoint: Returns details about a particular blog",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/blog/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"blog",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Sample response: Details about a blog by ID",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/blog/1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"blog",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "x-next",
+											"value": "irure occaecat sit in id",
+											"description": "A link to the next page of responses"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"value\": \"reference #/components/schemas/Blog not found in the OpenAPI spec\"\n}"
+								},
+								{
+									"name": "Unexpected error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/blog/1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"blog",
+												"1"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"code\": -28711189,\n  \"message\": \"enim culpa ut nisi\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Sample endpoint: Creates a new blog",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/blog?title=irure occaecat sit in id&author=irure occaecat sit in id&content=irure occaecat sit in id&timestamp=irure occaecat sit in id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"blog"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "irure occaecat sit in id",
+											"description": "(Required) title of the blog"
+										},
+										{
+											"key": "author",
+											"value": "irure occaecat sit in id",
+											"description": "(Required) author of the blog"
+										},
+										{
+											"key": "content",
+											"value": "irure occaecat sit in id",
+											"description": "(Required) content of the blog"
+										},
+										{
+											"key": "timestamp",
+											"value": "irure occaecat sit in id",
+											"description": "(Required) dt of the blog"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Sample response: Details about a blog by ID",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/blog?title=irure occaecat sit in id&author=irure occaecat sit in id&content=irure occaecat sit in id&timestamp=irure occaecat sit in id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"blog"
+											],
+											"query": [
+												{
+													"key": "title",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "author",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "content",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "timestamp",
+													"value": "irure occaecat sit in id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "x-next",
+											"value": "irure occaecat sit in id",
+											"description": "A link to the next page of responses"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"value\": \"reference #/components/schemas/Blog not found in the OpenAPI spec\"\n}"
+								},
+								{
+									"name": "Unexpected error",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/blog?title=irure occaecat sit in id&author=irure occaecat sit in id&content=irure occaecat sit in id&timestamp=irure occaecat sit in id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"blog"
+											],
+											"query": [
+												{
+													"key": "title",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "author",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "content",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "timestamp",
+													"value": "irure occaecat sit in id"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"code\": -28711189,\n  \"message\": \"enim culpa ut nisi\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Sample endpoint: Returns details about a particular blog",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/blog/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"blog",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Sample response: Deletes an blog by ID",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/blog/1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"blog",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "x-next",
+											"value": "irure occaecat sit in id",
+											"description": "A link to the next page of responses"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"value\": \"reference #/components/schemas/Blog not found in the OpenAPI spec\"\n}"
+								},
+								{
+									"name": "Unexpected error",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/blog/1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"blog",
+												"1"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"code\": -28711189,\n  \"message\": \"enim culpa ut nisi\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "comment",
+					"item": [
+						{
+							"name": "Sample endpoint: Returns details about a particular comment",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/comment/1/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"comment",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Sample response: Details about a comment by ID",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/comment/1/1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"comment",
+												"1",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "x-next",
+											"value": "irure occaecat sit in id",
+											"description": "A link to the next page of responses"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"value\": \"reference #/components/schemas/Comment not found in the OpenAPI spec\"\n}"
+								},
+								{
+									"name": "Unexpected error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/comment/1/1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"comment",
+												"1",
+												"1"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"code\": -28711189,\n  \"message\": \"enim culpa ut nisi\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Sample endpoint: Creates a new comment",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/comment?title=irure occaecat sit in id&author=irure occaecat sit in id&content=irure occaecat sit in id&timestamp=irure occaecat sit in id&blog=62395db87a3a0e47327a9973&replyto=irure occaecat sit in id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"comment"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "irure occaecat sit in id",
+											"description": "(Required) title of the comment"
+										},
+										{
+											"key": "author",
+											"value": "irure occaecat sit in id",
+											"description": "(Required) author of the comment"
+										},
+										{
+											"key": "content",
+											"value": "irure occaecat sit in id",
+											"description": "(Required) content of the comment"
+										},
+										{
+											"key": "timestamp",
+											"value": "irure occaecat sit in id",
+											"description": "(Required) dt of the comment"
+										},
+										{
+											"key": "blog",
+											"value": "62395db87a3a0e47327a9973",
+											"description": "(Required) id of the blog"
+										},
+										{
+											"key": "replyto",
+											"value": "irure occaecat sit in id",
+											"description": "id of the comment this comment replies to"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Sample response: Details about a comment by ID",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/comment?title=irure occaecat sit in id&author=irure occaecat sit in id&content=irure occaecat sit in id&timestamp=irure occaecat sit in id&blog=irure occaecat sit in id&replyto=irure occaecat sit in id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"comment"
+											],
+											"query": [
+												{
+													"key": "title",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "author",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "content",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "timestamp",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "blog",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "replyto",
+													"value": "irure occaecat sit in id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "x-next",
+											"value": "irure occaecat sit in id",
+											"description": "A link to the next page of responses"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"value\": \"reference #/components/schemas/Comment not found in the OpenAPI spec\"\n}"
+								},
+								{
+									"name": "Unexpected error",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/comment?title=irure occaecat sit in id&author=irure occaecat sit in id&content=irure occaecat sit in id&timestamp=irure occaecat sit in id&blog=irure occaecat sit in id&replyto=irure occaecat sit in id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"comment"
+											],
+											"query": [
+												{
+													"key": "title",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "author",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "content",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "timestamp",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "blog",
+													"value": "irure occaecat sit in id"
+												},
+												{
+													"key": "replyto",
+													"value": "irure occaecat sit in id"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"code\": -28711189,\n  \"message\": \"enim culpa ut nisi\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Sample endpoint: Returns details about a particular comment",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/comment/1/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"comment",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Sample response: Deletes an comment by ID",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/comment/1/1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"comment",
+												"1",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "x-next",
+											"value": "irure occaecat sit in id",
+											"description": "A link to the next page of responses"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"value\": \"reference #/components/schemas/Comment not found in the OpenAPI spec\"\n}"
+								},
+								{
+									"name": "Unexpected error",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/comment/1/1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"comment",
+												"1",
+												"1"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"code\": -28711189,\n  \"message\": \"enim culpa ut nisi\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Sample endpoint: Returns details about a particular comment",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/comment/all/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"comment",
+										"all",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Sample response: Deletes an comment by ID",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/comment/all/1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"comment",
+												"all",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "x-next",
+											"value": "irure occaecat sit in id",
+											"description": "A link to the next page of responses"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"value\": \"reference #/components/schemas/Comment not found in the OpenAPI spec\"\n}"
+								},
+								{
+									"name": "Unexpected error",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/comment/all/1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"comment",
+												"all",
+												"1"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"code\": -28711189,\n  \"message\": \"enim culpa ut nisi\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Sample endpoint: Returns all blogs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/blogs",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"blogs"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sample response: Details about all blogs",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/blogs",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"blogs"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "x-next",
+									"value": "irure occaecat sit in id",
+									"description": "A link to the next page of responses"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"value\": \"reference #/components/schemas/Blogs not found in the OpenAPI spec\"\n}"
+						},
+						{
+							"name": "Unexpected error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/blogs",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"blogs"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"code\": -28711189,\n  \"message\": \"enim culpa ut nisi\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Sample endpoint: Returns all comments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/comments/62395db87a3a0e47327a9973",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"comments",
+								"62395db87a3a0e47327a9973"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sample response: Details about all comments",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/comments/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"comments",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "x-next",
+									"value": "irure occaecat sit in id",
+									"description": "A link to the next page of responses"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"value\": \"reference #/components/schemas/Comments not found in the OpenAPI spec\"\n}"
+						},
+						{
+							"name": "Unexpected error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/comments/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"comments",
+										"1"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"code\": -28711189,\n  \"message\": \"enim culpa ut nisi\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "<Basic Auth Username>",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "<Basic Auth Password>",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "localhost:5000",
+			"type": "string"
+		}
+	]
+}
